@@ -1,7 +1,7 @@
 import { Grid } from '@mui/material';
 import React from 'react';
-import duri from "../data/duri.jpg";
-import kapa from "../data/kapa.jpg";
+import duri from "../data/images/duri.jpg";
+import kapa from "../data/images/kapa.jpg";
 import "../styles/Pages.css";
 
 function Bio() {
@@ -27,14 +27,14 @@ function Bio() {
             </ul>
           </div>
           <div className='facts'>
-            <h2>Some Facts</h2>
+            <h2>Some Random Facts</h2>
             <ul>
               <li> I like to sing. I'm a vocal/bassist for Kapacity, a rock band at UPenn. Here is a picture of me singing
                 "Are You Gonna be my Girl" by Jet at a show. 
               </li>
               <li> I recently got introduced to the band "My Chemical Romance" and I love them. </li>
-              <li> I love sports. I play every sport that involves any ball except lacrosse. I also picked up boxing recently but... </li>
-              <li> My favorite is basketball. I was a OKC fan before KD bailed on us. Now I follow the 76ers. </li>
+              <li> I love physical activities. I try to work out at least 4 times a week for at least an hour. </li>
+              <li> My favorite sport is basketball. My favorite team is the 76ers. </li>
               <li> My family has a Maltese named "Duri". Here is a picture of him. </li>
               <li> I served in the South Korean military as an Auxilary Police Officer. My main duties were keeping 
                 order and safety of seoul citizens and major governmental facilities.
@@ -43,7 +43,7 @@ function Bio() {
           </div>
           <div className='resume'>
             <p>
-              Here is my most recent <a href='https://drive.google.com/file/d/1Kho8RUmB5LJw4H6FyUuUt6qgKRHULvHu/view?usp=sharing' target="_blank" rel="noopener noreferrer">CV</a>
+              Here is my most recent <a href='https://drive.google.com/file/d/1S7KFswSC0cCp8sj13h9tWnN4JYoannMt/view?usp=sharing' target="_blank" rel="noopener noreferrer">CV</a>
               . You can also get a better description of my projects and experiences in the tabs above!
             </p>
           </div>

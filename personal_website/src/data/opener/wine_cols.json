@@ -1,0 +1,54 @@
+[
+  {
+    "Header": "Rank",
+    "accessor": "rank"
+  },
+  {
+    "Header": "Name",
+    "accessor": "Name"
+  },
+  {
+    "Header": "Price",
+    "accessor": "Price"
+  },
+  {
+    "Header": "Brand",
+    "accessor": "Brand"
+  },
+  {
+    "Header": "R/W/O/S",
+    "accessor": "R/W/O/S"
+  },
+  {
+    "Header": "Vintage",
+    "accessor": "Vintage"
+  },
+  {
+    "Header": "Area 1",
+    "accessor": "Area 1"
+  },
+  {
+    "Header": "Area 2",
+    "accessor": "Area 2"
+  },
+  {
+    "Header": "Area 3",
+    "accessor": "Area 3"
+  },
+  {
+    "Header": "Area 4",
+    "accessor": "Area 4"
+  },
+  {
+    "Header": "Grape Variety",
+    "accessor": "Grape Variety"
+  },
+  {
+    "Header": "AVG ABV",
+    "accessor": "AVG ABV"
+  },
+  {
+    "Header": "Score",
+    "accessor": "score"
+  }
+]

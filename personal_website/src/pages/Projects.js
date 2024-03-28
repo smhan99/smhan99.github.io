@@ -11,18 +11,18 @@ function Projects() {
           <h1> My Skills and Interests </h1>
           <ol className="list">
             <li className="item">
-              <h2> Full Stack Programming</h2>
+              <h2>Full Stack Programming</h2>
               <span>
-                NodeJS, ExpressJS, MySQL, MongoDB, Firebase, React
+                NodeJS, ExpressJS, MySQL, MongoDB, Django, Firebase, React
               </span>
             </li>
             <li className="item">
               <h2>Languages</h2>
-              <span>C, C++, Javascript, Python, Java, Ruby</span>
+              <span>C++, C, JavaScript (NodeJS, ReactJS, ExpressJS), Python (Django, Deep Learning), Java, SQL, Ruby</span>
             </li>
             <li className="item">
               <h2>Interests</h2>
-              <span>Cryptography and Cyber Security, Machine Learning, Full Stack Programming</span>
+              <span>Full Stack Programming, Cryptography and Security, Quantitative Systems</span>
             </li>
           </ol>
         </div>
@@ -32,7 +32,7 @@ function Projects() {
             <ImageList sx={{ width: "100%", height: "100%" }} cols={3} gap={20}>
               {ProjectList.map((project, idx) => {
                 return (
-                  <ProjectItem id={idx} name={project.name} short={project.short} />
+                  <ProjectItem id={idx} name={project.name} skills={project.skills} short={project.short} />
                 );
               })}
             </ImageList >

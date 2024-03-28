@@ -1,11 +1,11 @@
 export const ExperienceList = [
   {
-    name: "University of Pennsylvania",
-    position: "Operating Systems Course Teaching Assistant",
-    date: "01/2022 - Present",
-    short: "Assisted student learning by holding project lectures, recitations, and office hours for a masters-level Operating Systems course.",
+    name: "Supergate Inc.",
+    position: "Returning Software Developer Intern",
+    date: "05/2023 - 08/2023",
+    short: "Implemented algorithms for Private Information Retrieval with HElib C++ library that optimized query running time in linear scale to the number of items in the database",
     type: "work",
-    related_link: "https://boonloo.cis.upenn.edu/about/teaching/cis548/"
+    related_link: "http://supergate.cc/"
   },
   {
     name: "University of Pennsylvania",
@@ -16,20 +16,28 @@ export const ExperienceList = [
     related_link: "https://ugrad.seas.upenn.edu/student-handbook/programs-options/submatriculation-engineering/"
   },
   {
-    name: "University of Pennsylvania",
-    position: "Bachelor's in Computer and Information Science",
-    date: "08/2017 - 05/2023 (expected)",
-    short: "Major in Computer and Information Science, Minor in Mathematics",
-    type: "school",
-    related_link: "https://www.cis.upenn.edu/"
-  },
-  {
     name: "Supergate Inc.",
     position: "Software Developer Intern",
     date: "05/2022 - 08/2022",
     short: "Implemented algorithms for Private Information Retrieval with HElib C++ library that optimized query running time in linear scale to the number of items in the database",
     type: "work",
     related_link: "http://supergate.cc/"
+  },
+  {
+    name: "University of Pennsylvania",
+    position: "Operating Systems Course Head Teaching Assistant",
+    date: "01/2022 - Present",
+    short: "Assisted student learning by holding project lectures, recitations, and office hours for a masters-level Operating Systems course.",
+    type: "work",
+    related_link: "https://boonloo.cis.upenn.edu/about/teaching/cis548/"
+  },
+  {
+    name: "University of Pennsylvania",
+    position: "Bachelor's in Computer and Information Science",
+    date: "08/2017 - 05/2023 (expected)",
+    short: "Major in Computer and Information Science, Minor in Mathematics",
+    type: "school",
+    related_link: "https://www.cis.upenn.edu/"
   },
   {
     name: "Daangn Market Inc.",

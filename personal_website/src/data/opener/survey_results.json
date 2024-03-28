@@ -1,0 +1,29 @@
+{
+  "Jay": {
+    "Fruit" : {
+      "Citrus Fruit": 4,
+      "Stone Fruit": 2,
+      "Black Fruit": 6
+    },
+    "Meal" : "Grilled Lamb Ribs",
+    "Souvenir" : "Herbal"
+  },
+  "Roy": {
+    "Fruit" : {
+      "Tropical Fruit": 3,
+      "Red Fruit": 4,
+      "Stone Fruit": 3
+    },
+    "Meal" : "Grilled NY Strip",
+    "Souvenir" : "Pungent Spice"
+  },
+  "Hannah": {
+    "Fruit" : {
+      "Stone Fruit": 4,
+      "Black Fruit": 7,
+      "Red Fruit": 3
+    },
+    "Meal" : "Charred Lamb Shank",
+    "Souvenir" : "Herbal"
+  }
+}

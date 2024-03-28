@@ -1,5 +1,5 @@
 import React from 'react';
-import face from '../data/face.jfif';
+import face from '../data/images/face.jfif';
 import Typed from 'typed.js';
 import "../styles/Pages.css"
 import { Grid } from '@mui/material';
@@ -9,9 +9,9 @@ function Home() {
 
   React.useEffect(() => {
     const typed = new Typed(el.current, {
-      strings: ['<p>I am a software engineer passionate in learning and creating.</p>'],
+      strings: ['<p>I am a software engineer passionate in learning new things and creating for others.</p>'],
       showCursor: false,
-      typeSpeed: 50,
+      typeSpeed: 15,
     });
 
     return () => {
