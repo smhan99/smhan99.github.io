@@ -200,66 +200,58 @@
         </div>
         <p class="role">Market-Making / Liquidity-Provision (MM/LP) Systems Developer</p>
         <ul>
-          <li><b>Develop and own</b> the firm's MM/LP trading platform end to end — UI (C# / DevExpress), back-end
-              (C# &amp; C++), data &amp; analytics, and hardware / infrastructure — quoting <b>~5,500 instruments</b>
-              simultaneously on the Korea Exchange (KRX).</li>
-          <li><b>Re-architected</b> a 13-service .NET trading monolith into independently deployable services —
-              migrated piece by piece and verified against the old engine in parallel (no all-at-once cutover) —
-              <b>eliminated the market feed's chronic UI timeouts</b> and <b>cut quote lag from ~4 minutes to
-              real-time</b>, with monitoring scaled to far more concurrent consumers.</li>
-          <li><b>Built</b> the firm's ELW hedging engine from scratch in C++20 — core-pinned threads, zero-copy
-              parsing, lock-free quote tables — <b>raising its PnL margin from ~20% to ~80%</b>, and the foundation
-              for migrating the <b>Windows + C# platform to Linux + C++</b>.</li>
-          <li><b>Designed and deployed</b> a live KOSPI 200 index-arbitrage engine (fail-closed pre-trade risk gates,
-              automated re-pricing, order-blotter reconciliation), <b>cutting the cycle from several seconds on the
-              legacy system to &lt;1 ms</b>.</li>
-          <li><b>Optimized</b> the FEP exchange-gateway relay with the infrastructure team — TCP-stack tuning and
-              <b>kernel-bypass</b> on spread orders — reaching <b>~50 µs</b> quoting latency (best ~25 µs) and
-              <b>cutting jitter from unpredictable to &lt;10 µs</b>.</li>
-          <li><b>Built</b> the offline production machine's entire code-management and deployment toolchain by hand
-              (everything but git) — where it previously had none.</li>
-          <li><b>Designed</b> the API and ledger-to-FEP sync algorithm for the firm's DMA direct-ledger gateway —
-              the OMS sends orders without delay while the gateway checks balance on every order.</li>
-          <li><b>Partnered</b> with the security, IT-strategy, and infrastructure divisions to harden infrastructure
-              and run a regular hardware-refresh cycle for uninterrupted trading uptime.</li>
+          <li><b>Solely re-architected and fully rebuilt</b> the desk's MM/LP system for <b>~5,500 instruments</b>
+              (futures, options, ELW, ETN) — full-stack: backtesting DB → low-latency C++/C# back-end → C# / DevExpress
+              front-end.</li>
+          <li><b>Ported</b> the hot path from Windows/C# to Linux/C++ with CPU pinning, a busy-spin event loop,
+              lock-free queues, and a pool allocator — <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>,
+              perf-profiled; DPDK kernel-bypass integration in progress.</li>
+          <li><b>Specced and validated</b> a network switch replacement and NIC kernel-parameter tuning with the
+              infrastructure team, further cutting network-layer latency.</li>
+          <li><b>Implemented</b> quoting logic for options, basket, and single-stock futures/options arbitrage
+              strategies with the quant-trading desk — microprice-based fair-value pricing and real-time quote
+              adjustment.</li>
         </ul>
       </div>
 
       <div class="job reveal">
         <div class="job-head">
-          <h3>Supergate — Applied Cryptography Research</h3>
+          <h3>University of Pennsylvania — Teaching Assistant → Head TA</h3>
+          <span class="when">Jan 2022 – May 2024</span>
+        </div>
+        <p class="role">CIS 5480 — Operating Systems (graduate, ~250 students)</p>
+        <ul>
+          <li>Added <b>fuzz-style automatic edge-case generation</b> to the Python auto-grader, expanding coverage
+              across students' C operating-system implementations.</li>
+          <li>Designed and taught a Linux-style OS capstone (process scheduler and file system in C); ran weekly
+              reviews of low-level C systems code (scheduling, virtual memory, syscalls).</li>
+        </ul>
+      </div>
+
+      <div class="job reveal">
+        <div class="job-head">
+          <h3>Supergate — Applied Cryptography</h3>
           <span class="when">2022 &amp; 2023</span>
         </div>
-        <p class="role">Software Developer / Research Intern</p>
+        <p class="role">Software Engineer Intern</p>
         <ul>
-          <li>Built a searchable database over <b>fully homomorphic encryption</b> in C++ — private exact-match and
-              range queries with no decryption.</li>
-          <li>Co-invented two private-query protocols, <b>filed two patents</b>, and cut query-result size
-              <b>~50%</b>; cross-compiled the engine onto a <b>Xilinx Zynq FPGA</b>.</li>
+          <li>Built a <b>searchable FHE database library</b> in C++ (C++ · MongoDB) — exact-match queries over
+              encrypted data, no decryption.</li>
+          <li>Implemented two CRUD-capable <b>Private Query protocols</b>, cut query-result size <b>~50%</b>, and
+              <b>filed two patents</b>; cross-compiled onto a <b>Xilinx Zynq FPGA</b>.</li>
         </ul>
       </div>
 
       <div class="job reveal">
         <div class="job-head">
-          <h3>Daangn (Karrot) — Global Product</h3>
+          <h3>Karrot (Daangn) — Global Product</h3>
           <span class="when">2021</span>
         </div>
-        <p class="role">Global Business Development &amp; Product Intern</p>
+        <p class="role">Global Technical Product Management Intern</p>
         <ul>
-          <li>Drove international growth of the Karrot marketplace in Toronto, helping grow monthly active users <b>~1.5×</b>.</li>
-          <li>Built a live behavioral-analytics dashboard (BigQuery) to steer product decisions; ran PMF research and
-              competitive analysis to shape market-penetration strategy.</li>
-        </ul>
-      </div>
-
-      <div class="job reveal">
-        <div class="job-head">
-          <h3>University of Pennsylvania — Head Teaching Assistant</h3>
-          <span class="when">2021 – 2023</span>
-        </div>
-        <p class="role">Operating Systems (CIS 3800 / MCIT 5950)</p>
-        <ul>
-          <li>Led and coordinated the TA team for <b>250+ students</b>; ran recitations, code reviews, and office hours.</li>
+          <li>Drove <b>150% MAU growth</b> for the Karrot marketplace in Toronto.</li>
+          <li>Built a real-time in-app behavioral dashboard (BigQuery); proposed a consumer-penetration strategy from
+              PMF analysis.</li>
         </ul>
       </div>
 
@@ -284,9 +276,9 @@
       <div class="card reveal">
         <h3>C++ Ultra-Low-Latency Order Engine</h3>
         <div class="stack">C++20 · TICK-TO-TRADE · LOCK-FREE</div>
-        <p>A from-scratch order/hedge engine targeting <b>single-digit-µs</b> latency: core-pinned threads on a
-          zero-hop hot path, zero-copy parsing, lock-free quote tables, and a shared-memory parameter plane — the
-          basis of a solo effort to migrate the entire Windows + C# platform to <b>Linux + C++</b>.</p>
+        <p>A from-scratch order/hedge engine — core-pinned threads, busy-spin loop, lock-free queues, pool allocator —
+          that <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>; the basis of porting the entire
+          Windows + C# platform to <b>Linux + C++</b> (DPDK kernel-bypass in progress).</p>
       </div>
     </div>
 
@@ -294,13 +286,6 @@
     <h2>What I build on my own time</h2>
     <p class="section-lede">Self-directed work at the intersection of markets, systems, and frontier tooling.</p>
     <div class="cards">
-      <div class="card reveal">
-        <h3>Multi-Asset Portfolio &amp; Finance Platform</h3>
-        <div class="stack">FASTAPI · HTMX · TIMESCALEDB · DUCKDB</div>
-        <p>A self-hosted, real-time portfolio platform across Korean &amp; US equities, FX, and <b>crypto</b> —
-          live feeds, server-sent-event push, PnL, and net-worth history. Includes a stateless, computed-from-source
-          debt model with zero drift.</p>
-      </div>
       <div class="card reveal">
         <h3>FHE Secure Voting Platform</h3>
         <div class="stack">C++ · HELIB · CRYPTOGRAPHY</div>
