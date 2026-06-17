@@ -203,7 +203,7 @@
           <li><b>Solely re-architected and fully rebuilt</b> the desk's MM/LP system for <b>~5,500 instruments</b>
               (futures, options, ELW, ETN) — full-stack: backtesting DB → low-latency C++/C# back-end → C# / DevExpress
               front-end.</li>
-          <li><b>Ported</b> the hot path from Windows/C# to Linux/C++ with CPU pinning, a busy-spin event loop,
+          <li><b>Ported</b> the core order logic from Windows/C# to C++20 with CPU pinning, a busy-spin event loop,
               lock-free queues, and a pool allocator — <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>,
               verified with perf-based profiling.</li>
           <li><b>Specced and validated</b> a network switch replacement and NIC kernel-parameter tuning with the
@@ -278,8 +278,8 @@
         <h3>C++ Ultra-Low-Latency Order Engine</h3>
         <div class="stack">C++20 · TICK-TO-TRADE · LOCK-FREE</div>
         <p>A from-scratch order/hedge engine — core-pinned threads, busy-spin loop, lock-free queues, pool allocator —
-          that <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>; the basis of porting the entire
-          Windows + C# platform to <b>Linux + C++</b>.</p>
+          that <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>; the basis of porting the core order logic
+          from Windows/C# to <b>C++20</b>.</p>
       </div>
     </div>
 
@@ -342,8 +342,8 @@
       <div class="box reveal">
         <h4>Patents (filed)</h4>
         <ul>
-          <li><b>Encrypted Reverse Index</b> — KR 10-2023-0115045</li>
-          <li><b>PDQ Protocol over Finite Extension Fields</b> — KR 10-2023-0115051</li>
+          <li><b>FHE-based Encrypted Index</b> — KR 10-2023-0115045</li>
+          <li><b>FHE-based PDQ Protocol</b> — KR 10-2023-0115051</li>
         </ul>
       </div>
       <div class="box reveal">
