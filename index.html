@@ -200,23 +200,23 @@
         </div>
         <p class="role">Market-Making / Liquidity-Provision (MM/LP) Systems Developer</p>
         <ul>
-          <li>Sole developer-owner of the firm's MM/LP trading platform, <b>full-stack</b> — trader UI
-              (C# / DevExpress), back-end (C# &amp; C++), data &amp; analytics, and hardware / infrastructure —
-              quoting <b>~5,500 instruments simultaneously</b> over an exchange-connectivity stack.</li>
-          <li><b>Architected and lead</b> a strangler-fig re-platforming of the firm's 13-service .NET trading
-              monolith into independently deployable services, migrating risk-critical order logic behind a legacy
-              <b>parity oracle</b> (never a big-bang cutover).</li>
-          <li><b>Engineered</b> from scratch a C++20 ultra-low-latency order/hedge engine (single-digit-µs target):
-              core-pinned threads, zero-copy parsing, lock-free quote tables — the basis of a solo effort to migrate
-              the entire <b>Windows + C# platform to Linux + C++</b>.</li>
-          <li>Built and <b>run live in production</b> a KOSPI 200 index-arbitrage engine with fail-closed pre-trade
-              risk gates, automated re-pricing, and full order-blotter reconciliation.</li>
-          <li>Optimized the <b>FEP exchange-gateway relay</b> with the Infrastructure division — TCP-stack tuning and
-              <b>kernel-bypass</b> on spread orders for faster, steadier order delivery (~50 µs typical, best ~25 µs).</li>
-          <li>On the <b>DMA provisional-ledger (가원장) FEP</b> initiative, designed the FEP <b>API and a ledger ↔ FEP
-              sync algorithm</b> — OMS fires orders without delay while the gateway checks balance on every order.</li>
-          <li>Partner across <b>security, IT-strategy, and infrastructure divisions</b> on resilient infra and a
-              hardware-refresh cycle for seamless, always-on trading services.</li>
+          <li><b>Develop and own</b> the firm's MM/LP trading platform end to end — UI (C# / DevExpress), back-end
+              (C# &amp; C++), data &amp; analytics, and hardware / infrastructure — quoting <b>~5,500 instruments</b>
+              simultaneously on the Korea Exchange (KRX).</li>
+          <li><b>Re-architected</b> a 13-service .NET trading monolith into independently deployable services with a
+              strangler-fig migration, cutting over risk-critical order logic safely against the legacy engine as a
+              <b>parity oracle</b> (no big-bang cutover).</li>
+          <li><b>Built</b> a C++20 ultra-low-latency order/hedge engine from scratch — core-pinned threads, zero-copy
+              parsing, lock-free quote tables — targeting single-digit-µs tick-to-trade, and the foundation for
+              migrating the firm's <b>Windows + C# platform to Linux + C++</b>.</li>
+          <li><b>Designed and deployed</b> a live KOSPI 200 index-arbitrage engine with fail-closed pre-trade risk
+              gates, automated re-pricing, and full order-blotter reconciliation.</li>
+          <li><b>Optimized</b> the FEP exchange-gateway relay with the infrastructure team — TCP-stack tuning and
+              <b>kernel-bypass</b> on spread orders — reaching <b>~50 µs</b> quoting latency (best ~25 µs).</li>
+          <li><b>Designed</b> the API and ledger-to-FEP sync algorithm for the firm's DMA direct-ledger gateway —
+              the OMS sends orders without delay while the gateway checks balance on every order.</li>
+          <li><b>Partnered</b> with the security, IT-strategy, and infrastructure divisions to harden infrastructure
+              and run a regular hardware-refresh cycle for uninterrupted trading uptime.</li>
         </ul>
       </div>
 
