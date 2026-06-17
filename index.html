@@ -203,10 +203,10 @@
           <li>Sole developer-owner of the firm's MM/LP trading platform, <b>full-stack</b> — trader UI
               (C# / DevExpress), back-end (C# &amp; C++), data &amp; analytics, and hardware / infrastructure —
               quoting <b>~5,500 instruments simultaneously</b> over an exchange-connectivity stack.</li>
-          <li>Lead <b>VEGA</b> — a strangler-fig re-platforming of the firm's 13-service .NET trading monolith into
-              independently deployable services, migrating risk-critical order logic behind a legacy <b>parity
-              oracle</b> (never a big-bang cutover).</li>
-          <li>Lead <b>NOVA</b> — a from-scratch C++20 ultra-low-latency order/hedge engine (single-digit-µs target):
+          <li><b>Architected and lead</b> a strangler-fig re-platforming of the firm's 13-service .NET trading
+              monolith into independently deployable services, migrating risk-critical order logic behind a legacy
+              <b>parity oracle</b> (never a big-bang cutover).</li>
+          <li><b>Engineered</b> from scratch a C++20 ultra-low-latency order/hedge engine (single-digit-µs target):
               core-pinned threads, zero-copy parsing, lock-free quote tables — the basis of a solo effort to migrate
               the entire <b>Windows + C# platform to Linux + C++</b>.</li>
           <li>Built and <b>run live in production</b> a KOSPI 200 index-arbitrage engine with fail-closed pre-trade
@@ -270,14 +270,14 @@
       faster, cleaner foundation.</p>
     <div class="cards">
       <div class="card reveal">
-        <h3>VEGA — Trading Platform Re-Architecture</h3>
+        <h3>Trading-Platform Re-Architecture</h3>
         <div class="stack">.NET 8 / C# · STRANGLER-FIG · PARITY ORACLE</div>
         <p>A ground-up re-platforming of the firm's <b>13-service .NET trading monolith</b> into independently
           deployable services. Risk-critical order logic migrates behind a legacy <b>parity oracle</b> that proves
           behavior is preserved — incremental, reversible, never a big-bang cutover.</p>
       </div>
       <div class="card reveal">
-        <h3>NOVA — C++ Ultra-Low-Latency Order Plane</h3>
+        <h3>C++ Ultra-Low-Latency Order Engine</h3>
         <div class="stack">C++20 · TICK-TO-TRADE · LOCK-FREE</div>
         <p>A from-scratch order/hedge engine targeting <b>single-digit-µs</b> latency: core-pinned threads on a
           zero-hop hot path, zero-copy parsing, lock-free quote tables, and a shared-memory parameter plane — the
