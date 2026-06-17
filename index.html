@@ -205,7 +205,7 @@
               front-end.</li>
           <li><b>Ported</b> the hot path from Windows/C# to Linux/C++ with CPU pinning, a busy-spin event loop,
               lock-free queues, and a pool allocator — <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>,
-              perf-profiled; DPDK kernel-bypass integration in progress.</li>
+              verified with perf-based profiling.</li>
           <li><b>Specced and validated</b> a network switch replacement and NIC kernel-parameter tuning with the
               infrastructure team, further cutting network-layer latency.</li>
           <li><b>Implemented</b> quoting logic for options, basket, and single-stock futures/options arbitrage
@@ -279,7 +279,7 @@
         <div class="stack">C++20 · TICK-TO-TRADE · LOCK-FREE</div>
         <p>A from-scratch order/hedge engine — core-pinned threads, busy-spin loop, lock-free queues, pool allocator —
           that <b>cut tick-to-trade latency from 5 ms to ~25 µs (200×)</b>; the basis of porting the entire
-          Windows + C# platform to <b>Linux + C++</b> (DPDK kernel-bypass in progress).</p>
+          Windows + C# platform to <b>Linux + C++</b>.</p>
       </div>
     </div>
 
@@ -368,8 +368,7 @@
         <div class="chips">
           <span class="chip">Market making / LP</span><span class="chip">Index arbitrage</span>
           <span class="chip">Derivatives hedging</span><span class="chip">Market data</span>
-          <span class="chip">Exchange / FEP connectivity</span><span class="chip">Kernel-bypass networking</span>
-          <span class="chip">Low-latency execution</span><span class="chip">OMS &amp; ledger sync</span>
+          <span class="chip">Exchange / FEP connectivity</span><span class="chip">Low-latency execution</span>
           <span class="chip">Pre-trade risk</span>
         </div>
       </div>
