@@ -4,9 +4,9 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <title>Seungmin Han — Systems Architect</title>
-<meta name="description" content="Seungmin Han — systems architect spanning capital-markets trading infrastructure, applied cryptography, and product. An advanced engineer who designs and ships large systems with AI.">
+<meta name="description" content="Seungmin Han — systems architect spanning capital-markets trading infrastructure, applied cryptography, and product. An advanced engineer who designs and ships large, low-latency systems.">
 <meta property="og:title" content="Seungmin Han — Systems Architect">
-<meta property="og:description" content="Systems architect · capital-markets trading infrastructure · applied cryptography (FHE, 2 patents) · AI-augmented engineering.">
+<meta property="og:description" content="Systems architect · capital-markets trading infrastructure · applied cryptography (FHE, 2 patents) · low-latency trading systems.">
 <meta property="og:type" content="website">
 <script>document.documentElement.classList.add('js')</script>
 <style>
@@ -174,9 +174,9 @@
 
 <header class="hero">
   <div class="wrap">
-    <span class="eyebrow">Systems Architect · Capital Markets · Applied Cryptography · AI</span>
+    <span class="eyebrow">Systems Architect · Capital Markets · Low-Latency Trading · Applied Cryptography</span>
     <h1 class="name">Seungmin Han <span class="ko">한승민</span></h1>
-    <p class="tagline">I started as a programmer. Now I architect large systems — and build them with AI.</p>
+    <p class="tagline">I started as a programmer. Now I architect the low-latency systems a securities firm trades on.</p>
     <div class="cta">
       <a class="btn primary" href="resume/Seungmin_Han_Resume_EN.pdf">Résumé (EN) ↓</a>
       <a class="btn" href="resume/Seungmin_Han_Resume_KO.pdf">이력서 (KR) ↓</a>
@@ -203,16 +203,21 @@
           <li><b>Develop and own</b> the firm's MM/LP trading platform end to end — UI (C# / DevExpress), back-end
               (C# &amp; C++), data &amp; analytics, and hardware / infrastructure — quoting <b>~5,500 instruments</b>
               simultaneously on the Korea Exchange (KRX).</li>
-          <li><b>Re-architected</b> a 13-service .NET trading monolith into independently deployable services with a
-              strangler-fig migration, cutting over risk-critical order logic safely against the legacy engine as a
-              <b>parity oracle</b> (no big-bang cutover).</li>
-          <li><b>Built</b> a C++20 ultra-low-latency order/hedge engine from scratch — core-pinned threads, zero-copy
-              parsing, lock-free quote tables — targeting single-digit-µs tick-to-trade, and the foundation for
-              migrating the firm's <b>Windows + C# platform to Linux + C++</b>.</li>
-          <li><b>Designed and deployed</b> a live KOSPI 200 index-arbitrage engine with fail-closed pre-trade risk
-              gates, automated re-pricing, and full order-blotter reconciliation.</li>
+          <li><b>Re-architected</b> a 13-service .NET trading monolith into independently deployable services —
+              migrated piece by piece and verified against the old engine in parallel (no all-at-once cutover) —
+              <b>eliminated the market feed's chronic UI timeouts</b> and <b>cut quote lag from ~4 minutes to
+              real-time</b>, with monitoring scaled to far more concurrent consumers.</li>
+          <li><b>Built</b> the firm's ELW hedging engine from scratch in C++20 — core-pinned threads, zero-copy
+              parsing, lock-free quote tables — <b>raising its PnL margin from ~20% to ~80%</b>, and the foundation
+              for migrating the <b>Windows + C# platform to Linux + C++</b>.</li>
+          <li><b>Designed and deployed</b> a live KOSPI 200 index-arbitrage engine (fail-closed pre-trade risk gates,
+              automated re-pricing, order-blotter reconciliation), <b>cutting the cycle from several seconds on the
+              legacy system to &lt;1 ms</b>.</li>
           <li><b>Optimized</b> the FEP exchange-gateway relay with the infrastructure team — TCP-stack tuning and
-              <b>kernel-bypass</b> on spread orders — reaching <b>~50 µs</b> quoting latency (best ~25 µs).</li>
+              <b>kernel-bypass</b> on spread orders — reaching <b>~50 µs</b> quoting latency (best ~25 µs) and
+              <b>cutting jitter from unpredictable to &lt;10 µs</b>.</li>
+          <li><b>Built</b> the offline production machine's entire code-management and deployment toolchain by hand
+              (everything but git) — where it previously had none.</li>
           <li><b>Designed</b> the API and ledger-to-FEP sync algorithm for the firm's DMA direct-ledger gateway —
               the OMS sends orders without delay while the gateway checks balance on every order.</li>
           <li><b>Partnered</b> with the security, IT-strategy, and infrastructure divisions to harden infrastructure
@@ -271,10 +276,10 @@
     <div class="cards">
       <div class="card reveal">
         <h3>Trading-Platform Re-Architecture</h3>
-        <div class="stack">.NET 8 / C# · STRANGLER-FIG · PARITY ORACLE</div>
+        <div class="stack">.NET 8 / C# · INCREMENTAL MIGRATION</div>
         <p>A ground-up re-platforming of the firm's <b>13-service .NET trading monolith</b> into independently
-          deployable services. Risk-critical order logic migrates behind a legacy <b>parity oracle</b> that proves
-          behavior is preserved — incremental, reversible, never a big-bang cutover.</p>
+          deployable services — migrated piece by piece and verified against the old engine running in parallel, so
+          behavior is provably preserved with no risky all-at-once cutover.</p>
       </div>
       <div class="card reveal">
         <h3>C++ Ultra-Low-Latency Order Engine</h3>
@@ -297,14 +302,6 @@
           debt model with zero drift.</p>
       </div>
       <div class="card reveal">
-        <h3>AI-Augmented Architecture Harness</h3>
-        <div class="stack">APPLIED LLM · MULTI-AGENT SYSTEMS</div>
-        <p>How I now build large systems: a multi-agent harness I <b>direct to design, implement, and review</b> —
-          parallel-agent review with <b>adversarial refutation</b> and an independent second-model cross-check,
-          end-to-end feature pipelines, and a self-maintaining decision base — on a self-hosted Tailscale mesh.
-          Engineering judgment, applied at AI throughput.</p>
-      </div>
-      <div class="card reveal">
         <h3>FHE Secure Voting Platform</h3>
         <div class="stack">C++ · HELIB · CRYPTOGRAPHY</div>
         <p>An end-to-end encrypted election system where ballots are tallied entirely under encryption. Led as senior
@@ -321,7 +318,7 @@
 
     <p class="kicker" style="margin-top:48px">Earlier Research — ML &amp; Cryptography</p>
     <h2>Machine-learning &amp; cryptography work at Penn</h2>
-    <p class="section-lede">Where the AI and cryptography interests started.</p>
+    <p class="section-lede">Where the ML and cryptography interests started.</p>
     <div class="minis">
       <div class="mini reveal">
         <h4>Arxiv Text Summarization</h4>
@@ -397,7 +394,7 @@
           <span class="chip">TypeScript / React</span><span class="chip">SQL</span>
           <span class="chip">System architecture</span><span class="chip">Concurrency &amp; lock-free</span>
           <span class="chip">Distributed / real-time</span><span class="chip">FastAPI / HTMX</span>
-          <span class="chip">Applied LLM / agents</span><span class="chip">AI-augmented delivery</span>
+          <span class="chip">Machine learning</span>
         </div>
       </div>
       <div class="skillblock reveal">
